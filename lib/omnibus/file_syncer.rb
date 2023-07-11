@@ -21,7 +21,7 @@ module Omnibus
     extend self
 
     # Files to be ignored during a directory globbing
-    IGNORED_FILES = %w{. ..}.freeze
+    IGNORED_FILES = %w{. .. fsmonitor--daemon.ipc}.freeze
 
     #
     # Glob across the given pattern, accounting for dotfiles, removing Ruby's
