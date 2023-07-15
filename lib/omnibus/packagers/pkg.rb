@@ -255,6 +255,15 @@ module Omnibus
     end
 
     #
+    # Return the architecture
+    #
+    # @return [String]
+    #
+    def safe_architecture
+      @safe_architecture ||= Ohai["kernel"]["machine"]
+    end
+
+    #
     # Return the PKG-ready base package name, removing any invalid characters.
     #
     # @return [String]
